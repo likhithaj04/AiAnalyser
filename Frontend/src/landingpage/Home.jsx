@@ -1,6 +1,6 @@
 import React from 'react'
 import home from '../assets/bulb.png'
-
+import { Link } from "react-router-dom";
 export default function Home() {
   
   return (
@@ -31,7 +31,7 @@ export default function Home() {
 <p className='text-white font-serif mt-7 text-2xl'>
   Check your Linkedin Profile 
   <Link to="/l">
-    <button className='border border-blue-300 hover:border-white hover:text-white cursor-pointer p-1 ms-11 bg-blue-300 text-blue-800'>
+    <button className='border border-blue-300 hover:border-white hover:text-white cursor-pointer p-1 ms-6 bg-blue-300 text-blue-800'>
       Linkedin Analyser
     </button>
   </Link>
