@@ -9,7 +9,11 @@ const Tesseract=require('tesseract.js')
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin:[ "http://localhost:5173",
+  "https://aianalyser.onrender.com"
+]
+
+ }));
 
 const upload = multer({
   storage: multer.memoryStorage(),
