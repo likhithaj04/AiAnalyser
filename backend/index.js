@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({ origin:[ "http://localhost:5173",
-  "http://ai-analyser-beta.vercel.app"
+  "https://ai-analyser-beta.vercel.app"
 ]
 
  }));
