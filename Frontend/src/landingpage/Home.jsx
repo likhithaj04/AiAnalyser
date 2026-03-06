@@ -19,12 +19,23 @@ export default function Home() {
   </div>
   <div className='mt-60'>
  
-     <p className='text-white font-serif mt-7 text-2xl'>Check your Resume Ats Score 
-    <button className='border p-1 ms-6  border-blue-300 hover:border-white hover:text-white cursor-pointer bg-blue-300 text-blue-800'> Resume Analyser</button>
-  </p>
-  <p className='text-white font-serif mt-7 text-2xl '>Check your Linkedin Profile 
-    <button className='border border-blue-300 hover:border-white hover:text-white cursor-pointer p-1 ms-11 bg-blue-300 text-blue-800'> Linkedin Analyser</button>
-  </p>
+  <p className='text-white font-serif mt-7 text-2xl'>
+  Check your Resume Ats Score 
+  <Link to="/r">
+    <button className='border p-1 ms-6 border-blue-300 hover:border-white hover:text-white cursor-pointer bg-blue-300 text-blue-800'>
+      Resume Analyser
+    </button>
+  </Link>
+</p>
+
+<p className='text-white font-serif mt-7 text-2xl'>
+  Check your Linkedin Profile 
+  <Link to="/l">
+    <button className='border border-blue-300 hover:border-white hover:text-white cursor-pointer p-1 ms-11 bg-blue-300 text-blue-800'>
+      Linkedin Analyser
+    </button>
+  </Link>
+</p>
   </div>
 
   </div>
