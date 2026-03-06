@@ -12,7 +12,7 @@ function ResumeAnalyser() {
     dispatch({ type: "SET_LOADING", payload: true });
 
     try {
-      const res = await axios.post("http://localhost:3000", formdata);
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}`, formdata);
       dispatch({ type: "SET_RESULT", payload: res.data });
       console.log(res.data);
     } catch (error) {

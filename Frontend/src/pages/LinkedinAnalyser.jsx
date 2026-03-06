@@ -13,7 +13,7 @@ function LinkedinAnalyser() {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/linkedin",
+        `${import.meta.env.VITE_API_URL}/linkedin`,
         formdata,
         {
           headers: {
