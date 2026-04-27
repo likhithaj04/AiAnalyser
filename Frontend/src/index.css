@@ -1,1 +1,28 @@
-@import 'tailwindcss'
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import 'tailwindcss';
+
+body {
+  overflow-x: hidden;
+}
+:root{
+    --color-forestgreen:#1C6A4F;
+    --color-dimgray:#40916C;
+    --color-cadet:#52B788;
+    --color-cadetlight:#74C69D;
+    --color-cadetExtralight:#95D5B2;
+    --color-midnight:#1A5363;
+    --color-bg:#1e5261
+}
+
+.zen-font {
+  font-family: 'Zen Dots', sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

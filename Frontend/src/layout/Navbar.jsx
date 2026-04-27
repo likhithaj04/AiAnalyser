@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar() {
   return (
-    <div className='md:p-8 p-2 px-4 bg-blue-950 text-amber-50 '>
+    <div className='md:p-8 p-2 px-4 bg-[#1e5261] text-amber-50 '>
 
         <div className='flex justify-end md:gap-9 gap-2'>
                                 <a href='/' className='hover:text-indigo-400'>HOME</a>
