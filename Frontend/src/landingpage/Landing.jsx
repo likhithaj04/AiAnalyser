@@ -12,12 +12,14 @@ export default function Landing() {
       title:"Resume Analyser",
       description:"Analyse your resume",
           label: "Analyse",
+          path:'/r'
 
     },
     {
      title:"LinkedIn Analyser",
      description:"Analyse your Linkedin Profile and enhance",
          label: "Enhance",
+         path:'/l'
 
     },
     // {
@@ -64,24 +66,27 @@ export default function Landing() {
     <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar  relative inset-0 bg-linear-to-b from-[#1f2749] via-[#151b3b]/50 to-[#181f3a] z-6 mx-auto justify-center items-center">
 
       <Home />
+<div className="relative flex min-h-screen overflow-hidden  bg-linear-to-b from-[#1f2749] via-[#151b3b]/50 to-[#181f3a] justify-center items-center">
 
-     <div className="relative flex min-h-screen flex-col  justify-center overflow-hidden inset-0 bg-linear-to-b from-[#1f2749] via-[#151b3b]/50 to-[#181f3a] z-6 mx-auto items-center px-8 py-12">
-  {/* Your GravityStarsBackground here */}
-  <GravityStarsBackground className="absolute inset-0 z-10 text-white" starsCount={80} movementSpeed={0.4} glowIntensity={90} mouseGravity="attract" />
+  <GravityStarsBackground className="absolute inset-0 z-0 text-white" starsCount={80} movementSpeed={0.4} glowIntensity={90} mouseGravity="attract" />
 
-  <div className="relative z-20 w-full max-w-170">
+  <div className="relative z-20 w-full  pr-50">
     <div className="mb-10 text-center">
-      <p className="mb-3 text-[11px] uppercase tracking-[0.18em] text-blue-200/60">Career Tools</p>
-      <h1 className="font-syne text-4xl font-extrabold text-transparent bg-clip-text bg-linear-to-br from-slate-100 to-blue-200/80">
+      <p className="mb-3 text-[11px] uppercase tracking-[0.18em] font-bold text-blue-200/60">
+        Career Tools
+      </p>
+      <h1 className="font-syne text-4xl font-extrabold text-transparent bg-clip-text bg--to-br from-slate-100 to-blue-200/80">
         Where to?
       </h1>
     </div>
-    <div className="grid grid-cols-2 gap-6 sm:grid-cols-1">
+
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-1">
       {navigateCard.map((card, index) => (
         <NavigateCards key={index} {...card} />
       ))}
     </div>
   </div>
+
 </div>
 
 

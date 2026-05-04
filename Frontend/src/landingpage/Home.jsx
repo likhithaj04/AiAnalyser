@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="w-full h-screen inset-0 bg-linear-to-b from-[#1f2749] via-[#151b3b]/50 to-[#181f3a]  overflow-hidden flex justify-center items-center">
       
-      <div className="absolute inset-0 z-0 bg-glinearS-to-b from-[#6c81b9] via-[#151c3b]/50 to-[#1c233f]" />
+      <div className="absolute inset-0 z-0 bg-linear-to-b from-[#6c81b9] via-[#151c3b]/50 to-[#1c233f]" />
 
       <GravityStarsBackground
         className="absolute inset-0 z-10 text-white"
